@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-我的第一篇文章" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hexo-框架小白搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/08/01/我的第一篇文章/" class="article-date">
-  <time datetime="2019-08-01T01:13:36.000Z" itemprop="datePublished">2019-08-01</time>
+    <a href="/2019/08/01/hexo-框架小白搭建博客/" class="article-date">
+  <time datetime="2019-08-01T08:53:32.000Z" itemprop="datePublished">2019-08-01</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/01/我的第一篇文章/">o我的第一篇文章</a>
+      <a class="article-title" href="/2019/08/01/hexo-框架小白搭建博客/">hexo 框架小白搭建博客</a>
     </h1>
   
 
@@ -84,12 +84,53 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><hr>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2>
+        <h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><ol>
+<li><p>到nodejs.org下载node</p>
+</li>
+<li><p>cmd管理员启动 node -v  和  nmp -v查看版本</p>
+</li>
+<li><p>借助npm包管理器 安装 hexo 先输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先安装cnmp 淘宝的镜像源  cnmp -v查看版本</p>
+</li>
+<li><p>安装hexo框架 hexo -v查看</p>
+<pre><code class="bash">cnpm install -g hexo-cli</code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><ol>
+<li>hexo框架安装好后 新建一个文件夹 ，以后的操作都在这个文件夹里，以后出问题了删掉重来</li>
+<li>hexo init 创建博客</li>
+<li>hexo s 启动博客</li>
+<li>hexo new/n “第一篇文章” 新建文章  创建的是md格式的文件</li>
+<li>hexo clean  然后 写完文章以后hexo g 生成一下  再重新启动 就会出现在博客上 </li>
+</ol>
+<hr>
+<h2 id="部署到远端-用github免费"><a href="#部署到远端-用github免费" class="headerlink" title="部署到远端 用github免费"></a>部署到远端 用github免费</h2><ol>
+<li><p>github仓库的命名 必须是你的昵称.github.io</p>
+</li>
+<li><p>安装一下插件 cnpm install –save hexo-deployer-git</p>
+</li>
+<li><p>需要设置 _config.yml 用text打开都行 在最后设置  type: git || repo: 你仓库的地址|| branch: master</p>
+</li>
+<li><p>部署到远端hexo d 输入githun 账号密码  </p>
+</li>
+<li><p>//需要git设置用户名 邮箱  初始化过需要用： </p>
+<pre><code>git config --global --replace-all user.email &quot;输入你的邮箱&quot;   
+git config --global --replace-all user.name &quot;输入你的用户名&quot;</code></pre></li>
+<li><p>没有初始化 使用：</p>
+<pre><code>git config --global user.name &quot;输入你的用户名&quot;   
+git config --global user.email &quot;输入你的邮箱&quot;</code></pre><h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2></li>
+<li><p>git需要先安装</p>
+</li>
+</ol>
+<hr>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/01/我的第一篇文章/" data-id="cjyrznw4e0001a4uixggibzn5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/01/hexo-框架小白搭建博客/" data-id="cjysg2edq000180uip9tcz4mp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/01/hello-world/" data-id="cjyrznw420000a4ui5ezagrn1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/01/hello-world/" data-id="cjysg2edk000080uiyscwetca" class="article-share-link">Share</a>
       
       
     </footer>
@@ -179,7 +220,7 @@
       <ul>
         
           <li>
-            <a href="/2019/08/01/我的第一篇文章/">o我的第一篇文章</a>
+            <a href="/2019/08/01/hexo-框架小白搭建博客/">hexo 框架小白搭建博客</a>
           </li>
         
           <li>
